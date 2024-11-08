@@ -1,0 +1,64 @@
+table {
+    border-collapse: collapse;
+}
+
+td,th {
+    border : 1px solid #aaa;
+    padding : 5px;
+    width : 78px;
+    height : 40px;
+}
+
+th {
+    background-color: rgb(186, 246, 226);
+}
+
+thead {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+tbody {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+tfoot {
+    font-family: fantasy;
+}
+thead tr {
+     height : 100px;
+     background-color: bisque;
+}
+
+thead th {
+    transform : rotate(90deg);
+    background-color:transparent;
+    text-shadow: 1px 1px 1px #468ae8;
+    
+   
+}
+
+.diagonal {
+    transform : rotate(45deg);
+    color :rgb(22, 156, 234);
+    font-weight: bold;
+    text-align: center;
+}
+
+.vertical {
+    transform : rotate(90deg);
+    color :rgb(7, 86, 132);
+    font-weight: bold;
+    font-variant: small-caps;
+    padding: 0;
+
+}
+
+.m-1w1 {
+    background-color: rgb(231, 173, 26);
+}
+.p-5w5 {
+    background-color: rgb(22, 156, 234);
+}
+
+.tableau__h3 {
+    font-size: .8rem;
+}
