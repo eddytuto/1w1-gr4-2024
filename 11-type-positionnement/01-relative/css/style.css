@@ -1,0 +1,26 @@
+body {
+    box-sizing: border-box;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    min-height : 100vh;
+
+}
+
+div{
+    width: 100px;
+    border: 3px solid #aaa;
+    text-align: center;
+    padding : 5px;
+}
+
+.decalage{
+    position : relative;
+    left : 20px;
+    top : 20px;
+    background-color: blueviolet;
+}
+
+article {
+    background-color: bisque;
+}
