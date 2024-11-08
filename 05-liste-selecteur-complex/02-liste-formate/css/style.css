@@ -1,0 +1,27 @@
+* {
+    box-sizing:border-box;
+}
+body{
+    margin:0;
+    padding:0;
+}
+
+ul{
+    border: 3px solid #aaa;
+    padding : 30px;
+    margin-left: 17px;
+}
+
+ul ul {
+    border: 3px dashed #77ec9a;
+}
+ol {
+    border: 3px solid #b47070;
+    padding : 10px;
+    margin-left: 30px;
+}
+
+li {
+    border : 3px dotted #c4dcf9;
+    padding-left : 10px;
+}

@@ -1,0 +1,78 @@
+
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size : 16px;
+}
+
+section{
+    /*
+    vw = viewport width 
+    vh = viewport height
+    100vh = 100% du viewport verticale
+    (100% de la hauteur de la fenêtre du navigateur qui affiche la page 
+    */
+
+    height : 100vh;
+}
+
+#un{
+    background-color: aquamarine;
+}
+#deux {  background-color: rgb(53, 139, 201);}
+#trois{  background-color: rgb(219, 229, 17);}
+#quatre {  background-color: rgb(183, 96, 55);}
+#cinq {  background-color: rgb(100, 51, 222);}
+
+a {
+    text-decoration: none;
+}
+
+.navigation {
+    display: block;
+    border : 2px solid #aaa;
+    text-align: right;
+    padding: 10px;
+}
+
+/*
+- De l'espace entre chacun des liens
+- Un effet de survol sur chacun des liens
+   .navigation a:hover {}
+- Augmentation de la grandeur des liens
+*/
+
+.navigation a {
+    font-size : 1.3rem;
+    display: inline-block;
+    border : 1px solid #aaa;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+.navigation a:active {
+    color: rgb(7, 61, 237);
+    background-color: #eedc12;
+
+}
+
+.navigation a:link {
+    color: rgb(7, 237, 49);
+    background-color: rgb(247, 254, 255);
+}
+
+
+.navigation a:visited{
+    color: red;
+    background-color: hsl(0, 51%, 36%);
+}
+
+.navigation a:hover {
+    background-color: beige;
+}
+
+
+h1 {
+    margin:0;
+    padding : 20px;
+}

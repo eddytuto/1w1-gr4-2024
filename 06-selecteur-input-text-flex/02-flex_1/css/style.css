@@ -1,0 +1,25 @@
+* {
+    margin:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   /*  min-height: 100vh; */
+}
+
+.conteneur {
+    display: flex;
+    background-color: aquamarine;
+   
+    justify-content:flex-start; /* enlignement au début sur l'axe principal */
+    justify-content:flex-end; /* enlignement au début sur l'axe principal */
+    align-items: center; /* enlignement sur l'axe perpendiculaire */
+    min-height: 100vh; 
+    justify-content: center; /* enlignement au centre sur l'axe principal */
+}
+
+div {
+    font-size: 3rem;
+    border: 2px solid #aaa;
+}

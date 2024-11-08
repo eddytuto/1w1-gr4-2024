@@ -1,0 +1,37 @@
+* {
+    margin : 0;
+    padding : 0;
+}
+body {
+
+}
+
+.centre {
+    margin : 200px auto;
+    width : 403px;
+    height: 300px;
+    border : 3px solid #aaa;
+/*
+background-image : linear-gradient(départ, fin), url(chemin de l'image);
+*/
+    
+    background-image :linear-gradient(rgba(0, 0, 255, .2), rgba(255, 255, 0, .3)), url(images/01-voile.jpg);
+    background-size: contain;
+    background-repeat : no-repeat;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 3px;
+    text-align : center;
+    color : #339ea4;
+    opacity:1;
+}
+
+.centre:nth-of-type(1){
+
+}
+
+.centre h1 {
+    margin-top : 60px;
+    border : 2px solid rgb(30, 140, 224);
+    font-size : 3.3rem;
+
+}

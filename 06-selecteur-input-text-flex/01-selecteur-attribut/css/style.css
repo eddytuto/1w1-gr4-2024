@@ -1,0 +1,55 @@
+* {
+    margin : 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a {
+    display: block;
+    border: 2px solid #aaa;
+    padding : 5px;
+    font-size: 1.5rem;
+}
+ /* 
+    sélectionne toutes les balise « a » 
+    qui possède un attribut « href » 
+    dont le contenu débute (^=)  par « https » 
+*/
+a[href^="https"] {
+    background-color: aqua;
+}
+ /* 
+    sélectionne toutes les balise « a » 
+    qui possède un attribut « href » 
+    dont le contenu débute (^=)  par « # » 
+*/
+
+a[href^="#"] {
+    background-color: rgb(43, 87, 189);
+    color : #fff;
+}
+
+ /* 
+    sélectionne toutes les balise « a » 
+    qui possède un attribut « href » 
+    dont le contenu se termine par ($=)  par « pdf » 
+*/
+
+a[href$="pdf"] {
+    color : red;
+}
+
+ /* 
+    sélectionne toutes les balise « a » 
+    qui possède un attribut « href » 
+    dont le contenu se termine par ($=)  par « css » 
+*/
+
+a[href$="css"] {
+    background-color: rgb(243, 221, 23);
+}
+
+

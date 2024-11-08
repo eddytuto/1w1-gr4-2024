@@ -1,0 +1,37 @@
+* {
+    margin : 0;
+    padding : 0;
+}
+
+body {
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    
+}
+#fin {
+    color : red;
+    font-size: 2rem;
+}
+
+
+a {
+    display : inline-block;
+    font-size: 2rem;
+    padding : 20px;
+    border : 1px solid #aaa;
+}
+
+a:hover {
+    background-color: antiquewhite;
+}
+a:link {
+    color : #00f;
+}
+a:visited {
+    color : green;
+}
+
+a:active {
+    background-color: blueviolet;
+}
+
+

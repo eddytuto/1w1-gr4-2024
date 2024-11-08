@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>propriété margin</title>
+    <style>
+        body {
+            background-color: azure;
+            margin : 100px;
+            /* premet de centrer horizontalement
+             le contenu de la balise body */
+            text-align: center;
+           
+        }
+        /* Ce sélecteur « .centre » est une classe 
+        qui permettra de cibler la ou les balises <div class="centre">.
+        qui ensuite subiront le format définit dans la règle de style */
+        .centre {
+            /*
+            par défaut une division (la balise div) à la propriété 
+            display : block;
+            h1,h2,h3,h4,h5 et h6 sont toutes des display : block;
+            a, img, code ... sont toutes des display : inline;
+            */
+           display : inline-block; 
+            background-color:#20c14a;
+            /* px, em, rem, vw, vh */
+            font-size : 5rem;
+            border : 13px dotted #0449e3;
+            padding:30px;
+            margin-top:200px;
+            outline: 13px dotted #aaa;
+            outline-offset: 20px;
+            color : #fff;
+        }
+    </style>
+</head>
+<body>
+    <!-- l'attribut class
+      nous permet de définir un nom pour un ou plusieurs élément HTML.
+      Ce nom sera utilisé comme sélecteur dans notre code CSS.
+      Pour utiliser ce sélecteur il faudra précéder le « centre » par un point.
+      Exemple : .centre { margin : 20 px; }
+      -->
+    <div class="centre">1W1</div>
+
+    
+    
+
+
+
+</body>
+</html>

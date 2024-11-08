@@ -1,0 +1,23 @@
+table {
+    border-collapse: collapse;
+}
+
+td,th {
+    border : 1px solid #aaa;
+    padding : 5px;
+}
+
+th {
+    background-color: rgb(186, 246, 226);
+}
+
+thead {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+tbody {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+tfoot {
+    font-family: fantasy;
+}

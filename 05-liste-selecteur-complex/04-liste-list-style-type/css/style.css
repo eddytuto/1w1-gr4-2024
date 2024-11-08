@@ -1,0 +1,38 @@
+* {
+    box-sizing:border-box;
+}
+body{
+    margin:0;
+    padding:0;
+}
+
+ul{
+    border: 5px solid #e1c50f;
+    padding : 30px;
+    margin-left: 17px;
+    list-style-type: "\1F3E1";
+    background-color: #9feab5;
+}
+
+ul ul {
+    border: 10px dashed #7796ec;
+    background-color: #d6bb32;
+    padding :10px; 
+}
+ul ul ul {
+    border: 5px dashed #daec0f;
+    background-color: #e43d1c;
+    margin : 10px;
+}
+
+ol {
+    border: 3px solid #b47070;
+    padding : 10px;
+    margin-left: 30px;
+}
+
+li {
+   /* border : 3px dotted #c4dcf9; */
+    padding-left : 10px;
+    margin-left: 31px;
+}

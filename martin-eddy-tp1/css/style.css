@@ -1,0 +1,25 @@
+* {
+    box-sizing:border-box; 
+  /*  box-sizing:content-box; */
+}
+
+.entete{}
+
+.principal {}
+
+.pied-page {
+    background-color: black;
+}
+
+
+.pied-page section {
+    width: 960px;
+    margin : 0 auto;
+    color : #fff;
+}
+
+.pied-page div {
+    display: inline-block;
+    width : 33%;
+    border : 1px solid #ccc;
+}

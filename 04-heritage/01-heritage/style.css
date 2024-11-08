@@ -1,0 +1,45 @@
+* {
+    margin : 0;
+    padding : 0;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: red;
+    font-size: 24px;
+    padding : 30px;
+    
+}
+
+h1 {
+    font-family :Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /*
+        2em = 2 x le font-size du parent
+        2rem = 2 x le font-size du body
+    */
+    font-size : 3rem;
+}
+
+h2{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #00f;
+}
+p{
+  padding : 20px;
+}
+/*
+le sélecteur class est précédé par un .
+*/
+.commentaire {
+    color : #040;
+    font-family: fantasy;
+}
+
+/*
+ le selecteur «id» est précédé par un #
+*/
+#remarque {
+    color:blueviolet;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}

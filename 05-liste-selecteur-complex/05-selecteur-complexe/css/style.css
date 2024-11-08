@@ -1,0 +1,60 @@
+* {
+    box-sizing:border-box;
+}
+body{
+    margin:0;
+    padding:0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+p {
+    display : inline-block;
+    width: 200px;
+    padding : 5px;
+    background-color: rgb(157, 177, 243);
+}
+
+.quatrieme {
+    background-color: aqua;
+}
+
+/* la règle générale */
+/* Juste après le paragraphe  « .premier » tous les paragraphe suivant seront vert */
+.premier ~ p {
+    background-color: rgb(8, 143, 17);
+}
+/* La règle de style « générale » sera annulé pour le «p» suivant le «p.quatrieme» */
+.quatrieme + p {
+    background-color: rgb(255, 238, 0);
+}
+/* La règle de style « général » sera annulé pour le «p» suivant le «p.sixieme» */
+.sixieme + p {
+    background-color: rgb(90, 174, 239);
+}
+/* à partir de p.sixieme les paragraphe suivant seront rouge */
+.sixieme ~ p {
+    background-color: rgb(239, 90, 90);
+}
+/* le sixième est jaune */
+.sixieme {
+    background-color: rgb(229, 218, 13);
+}   
+
+
+
+/* //////////////////////////////////////////////  */
+div {
+    border : 1px solid #aaa;
+    width : 100px;
+    padding : 10px;
+}
+div {
+    background-color: rgb(141, 79, 200);
+}
+
+div > div > div {
+    background-color: rgb(75, 150, 185);
+}
+
+div   div  {
+    background-color: rgb(198, 187, 28);
+}

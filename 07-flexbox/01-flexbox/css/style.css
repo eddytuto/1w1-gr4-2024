@@ -1,0 +1,66 @@
+* {
+    margin:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   /*  min-height: 100vh; */
+   font-size : 16px;
+   display : flex;
+   flex-direction: column;/* axe principal devient vertical */
+   /* justify-content: flex-start; */
+   background-color:burlywood;
+}
+
+/* largeur du contenu central est de 1100px */
+
+
+/* /////////////////////////  Général */
+
+.entete > section,
+.principal > section,
+.pied-de-page > section {
+  width : 1100px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+}
+p{
+    font-size : 1.5rem;
+}
+
+
+/* ///////////////////////// .entete  */
+.entete{
+    /* aquamarine; */
+    background-color: aquamarine;
+}
+.entete > section{}
+
+/* ///////////////////////// .principal */
+.principal{
+    /* bisque */
+    background-color:bisque;
+}
+.principal > section {}
+
+
+/* ///////////////////////// .pied-de-page */
+.pied-de-page{
+/* burlywood  */
+background-color:burlywood;
+
+}
+.pied-de-page > section {
+    display : flex;
+    justify-content: space-between;
+    height : 35vh;
+
+}
