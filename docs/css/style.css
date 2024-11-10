@@ -1,5 +1,5 @@
 :root {
-  --couleur-bg: rgb(22 191 234 / 29%);
+  --couleur-bg: rgb(76 187 111 / 29%);
 }
 
 body {
@@ -84,6 +84,7 @@ body {
 
 .tableau__h3 {
   font-size: 1rem;
+  font-weight: bold;
 }
 
 .tableau__h2 {
@@ -100,7 +101,9 @@ body {
   font-size: 0.5rem;
 }
 
-.dispo {
+.disponible {
+  background-color: #ad0000;
+  color: #fff;
 }
 
 .centre {
