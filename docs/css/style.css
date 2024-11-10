@@ -1,3 +1,13 @@
+:root {
+  --couleur-bg: rgb(22 191 234 / 29%);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
 .tableau {
   border-collapse: collapse;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -9,49 +19,54 @@
   color: #777;
 }
 
-td,
-th {
-  border: 1px solid #aaa;
+.tableau td,
+.tableau th {
+  position: relative;
+  border: 1px solid var(--couleur-bg);
   padding: 5px;
   width: 200px;
   height: 40px;
 }
 
-th {
-  background-color: rgb(186, 246, 226);
+.tableau th {
+  background-color: var(--couleur-bg);
 }
 
-thead {
+.tableau tr th:nth-of-type(1) {
+  width: 30px;
+}
+
+.tableau thead {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
-tbody {
+.tableau tbody {
   font-family: "Courier New", Courier, monospace;
 }
 
-tfoot {
+.tableau tfoot {
   font-family: fantasy;
 }
-thead tr {
+.tableau thead tr:nth-of-type(2) {
   height: 100px;
-  background-color: bisque;
 }
 
-thead th {
+.tableau thead th p {
   transform: rotate(90deg);
   background-color: transparent;
   text-shadow: 1px 1px 1px #468ae8;
 }
 
-.diagonal {
+.tableau .diagonal {
   transform: rotate(45deg);
 
   font-weight: bold;
   text-align: center;
 }
 
-.vertical {
-  transform: rotate(90deg);
+.tableau .vertical {
+  transform-origin: 50%;
+  transform: rotate(90deg) scale(8);
   color: rgb(7, 86, 132);
   font-weight: bold;
   font-variant: small-caps;
@@ -77,4 +92,17 @@ thead th {
 
 .tableau__caption {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  padding: 20px;
+}
+
+.titre__absolute {
+  /* position: absolute; */
+  font-size: 0.5rem;
+}
+
+.dispo {
+}
+
+.centre {
+  text-align: center;
 }
