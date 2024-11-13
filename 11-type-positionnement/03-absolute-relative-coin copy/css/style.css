@@ -9,24 +9,22 @@ body {
 
 div{
     position : absolute;
-    width: 100px;
     border: 3px solid #aaa;
     text-align: center;
     padding : 5px;
     width : 50px;
+    height: 50px;
+    background-color: aquamarine;
 }
 
-.decalage{
-    position : absolute;
-    left : 20px;
-    top : 20px;
-    background-color: blueviolet;
-}
 
-article {
+
+article {  
+    /* devient la référence on positionner les «div» dans les coins */
+    position: relative;
     background-color: bisque;
     /* Le référentiel est l'article */
-    position: relative;
+  
     width : 500px;
     height : 500px;
 }
@@ -35,12 +33,22 @@ article {
 top, bottom, left, right 
 */
 
-.nord-ouest{
-    
+.no{
+    top:0;
+    right:0;
 }
 
-.nord-est{}
+.ne{
+    top:0;
+    left:0;
+}
 
-.sud-ouest{}
+.so{
+    bottom:0;
+    right:0;
+}
 
-.sud-est{}
+.se{
+    bottom:0;
+    left:0;
+}

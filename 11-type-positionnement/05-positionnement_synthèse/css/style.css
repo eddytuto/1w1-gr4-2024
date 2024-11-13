@@ -1,0 +1,105 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    width : 200vw;
+}
+
+div {
+    width : 200px;
+    height: 200px;
+    border : 3px solid #aaa;
+    font-size: 2rem;
+    margin : 20px;
+    padding : 10px;
+    background-color: khaki;
+}
+
+a {
+    display : block;
+    position : relative;
+    left: 20px;
+    width : 200px;
+    margin : 0;
+    padding : 0;
+    border : 1px solid #aaa;
+    height : 30px;
+    background-color: #000;
+    color : #fff;
+}
+
+span {
+    font-size: .8rem;
+}
+
+
+/*
+statique : 
+Chaque élément a une position statique par défaut, ce qui veut dire qu'on a pas besoin d'inscrire « position: static; » 
+L'élément s'en tiendra au flux de page normal. 
+Les propriétés positionnelles  n'ont aucun effet sur un élément en position static : z-index, left, right, top, bottom
+*/
+.mon-statique {
+    /* position : static; par défaut si on ne mentionne pas le mode de positionnement */
+    /* les propriétés suivante n'ont aucun effet */
+    z-index : 20;
+    left: 20px;
+    right : 50px;
+    top : 20px;
+    bottom : 10px;
+}
+/*
+relative : la position d'origine d'un élément reste dans le flux du document, tout comme la valeur statique. 
+Mais maintenant,  z-index, left, right, top, bottom fonctionneront. 
+Les propriétés de positionnement « poussent » l'élément de sa position d'origine dans cette direction.
+*/
+
+.mon-relative {
+    position : relative;
+    left : 500px
+}
+
+/*
+absolute : l'élément est supprimé du flux du document 
+et les autres éléments autour se comporteront comme s'il n'était même pas là
+tandis que toutes les autres propriétés positionnelles fonctionneront dessus.
+*/
+
+.mon-absolute {
+    position :absolute;
+    top:0;
+    right:0;
+}
+
+/*
+fixed : l'élément est retiré du flux du document comme des éléments en position absolute. 
+En fait, ils se comportent presque de la même manière, 
+seuls les éléments à position fixed sont toujours relatifs au document,
+pas à un parent particulier, et ne sont pas affectés par le défilement.
+*/
+
+.mon-fixed {
+    position:fixed;
+    bottom:0;
+    right:0;
+}
+/*
+sticky  : l'élément est traité comme une valeur relative 
+jusqu'à ce que l'emplacement de défilement de la fenêtre atteigne un seuil spécifié, auquel point l'élément prend une position fixe
+ où il est dit de coller.
+*/
+
+.mon-sticky {
+    position : sticky;
+    top:0;
+    left :0;
+    margin-left: 25%;
+}
+
+/*
+inherit : la valeur de position ne se répercute pas en cascade, 
+elle peut donc être utilisée pour la forcer spécifiquement et hériter de la valeur de positionnement de son parent.
+*/
+
+.mon-inherit {
+    position:inherit; 
+}
