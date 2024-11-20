@@ -30,8 +30,8 @@ h4{}
 p{}
 
 #entete, #pied{
-   /* background-color: rgb(18, 33, 235); */
-    background-image: linear-gradient(90deg, rgb(18, 33, 235),#003)
+   background-color: rgb(18, 33, 235); 
+  
 }
 #section-1{
     background-color: hsl(20,50%,80%);
@@ -47,7 +47,10 @@ p{}
 
 /* /////////////////////////////// section hero /// */
 
-.hero {}
+.hero {
+    background-image: linear-gradient(90deg, rgb(103, 163, 227),rgb(3, 27, 48));
+
+}
 .hero__h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 5rem;

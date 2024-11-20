@@ -1,0 +1,39 @@
+body {
+    min-height: 300vh;
+}
+
+
+#bouton{
+    position : fixed;
+    top: 20px;
+    right: 20px;
+}
+
+
+#chk-bouton{
+    display : none;
+}
+/*
+Ce sélecteur peut aussi fonctionner
+.entete__navigation:hover + .entete__navigation
+
+*/
+
+#chk-bouton:checked + .entete__navigation
+{
+    transform : translateX(0);
+}
+
+.entete__navigation {
+    transform : translateX(200px); 
+    transition : transform .25s;
+    display: flex;
+    position : fixed;
+    top: 50px;
+    right: 20px;
+    
+    flex-direction: column;
+    gap: 5px;
+    border : 3px solid #006;
+    padding : 5px;
+}
