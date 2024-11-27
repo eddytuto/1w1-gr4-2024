@@ -1,0 +1,59 @@
+body {
+    min-height: 300vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+#bouton{
+    position : fixed;
+    top: 20px;
+    right: 20px;
+}
+
+
+#chk-bouton{
+    display : none;
+}
+/*
+Ce sélecteur peut aussi fonctionner
+.entete__navigation:hover + .entete__navigation
+
+
+
+
+*/
+/*
+ Ce sélecteur permet de cibler .ente__navigation à condition qu'il
+ soit précéder par un checkbox côcher
+*/
+
+
+#chk-bouton:checked + .entete__navigation
+{
+    /* permet au menu de reprendre sa position naturel donc de devenir visible */
+    transform : translateX(0);
+}
+
+.entete__navigation {
+    /* on cache le menu en le glissant à l'extérieur de la fenêtre */
+    transform : translateX(200px); 
+    transition : transform .25s;
+
+    position : fixed;
+    top: 50px;
+    right: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;;
+    background-color: #006;
+
+}
+
+.entete__navigation a {
+    text-decoration: none;
+        color : #fff;
+}
+
