@@ -1,0 +1,28 @@
+.galerie{  
+  display: flex;
+  justify-content: flex-start;
+  /* gap:10px; */
+  flex-wrap: wrap;
+}
+
+
+
+.galerie figure{
+  flex : 0 0 300px;
+  transform: scale(.9);
+  filter:grayscale(1);
+  transition: transform .25s, filter .25s;
+
+}
+
+.galerie figure:hover{
+  transform: scale(1);
+  filter:grayscale(0);
+} 
+
+
+.galerie figure img {
+  width : 100%;
+  flex: 0 0 
+}
+

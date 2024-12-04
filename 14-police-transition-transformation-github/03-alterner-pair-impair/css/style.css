@@ -1,0 +1,22 @@
+
+
+.article{
+  display:flex;
+  justify-content: space-between;
+
+}
+
+
+.article figure{
+flex: 0 0 300px;
+}
+.article figure img {
+  width : 100%;
+}
+
+.article:nth-of-type(odd) figure{
+  order : 9;
+}
+
+
+
