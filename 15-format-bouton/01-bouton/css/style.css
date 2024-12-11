@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+body{
+  display : flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(163, 249, 163);
+  min-height: 100vh;
+  gap: 20px;
+}
+
+a{
+  text-decoration: none;
+}
+
+button, a {
+  padding : 40px 40px;
+  display : block;
+  font-size: 2rem;
+  color : #efeb09;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border: none;
+  outline:none;
+}
+.bouton__couleur {
+  background-color: rgba(0,0,0, 0.2);
+
+
+}
+
+.bouton__gradient {
+  background-color: rgba(0,0,0, 0.2);
+  background-image: linear-gradient(
+                  45deg, 
+                  rgba(0,0,0, 0.05),
+                  rgba(0,0,0, 0.5));
+}
+
+
+.bouton__gradient {
+  background-color: rgba(0,0,0, 0.2);
+  background-image: linear-gradient(
+                  45deg, 
+                  rgba(0,0,0, 0.05),
+                  rgba(0,0,0, 0.5));
+}
+
+.bouton__anime{
+  background-color:#f00;
+  background-image: linear-gradient(
+                  45deg, 
+                  rgba(255,255,225, 0.1),
+                  rgba(0,0,0, 0.5));
+  transition: all .25s;
+}
+
+.bouton__anime:hover{
+  background-color:#f00;
+  background-image: linear-gradient(
+                  -45deg, 
+                  rgba(255,255,225, 0.1),
+                  rgba(0,0,0, 0.5));
+
+}
+
+.bouton__a {
+  background-color: rgba(0,0,0, 0.2);
+}
+.bouton__a__couleur__gradient{
+  background-color: rgba(0,0,0, 0.2);
+  background-image: linear-gradient(
+                  45deg, 
+                  rgba(0,0,0, 0.05),
+                  rgba(0,0,0, 0.5));
+}
+
+.bouton__a__anime {
+  background-color:#f00;
+  background-image: linear-gradient(
+                  45deg, 
+                  rgba(255,255,225, 0.1),
+                  rgba(0,0,0, 0.5));
+  transition: all .25s;
+}
+
+.bouton__a__anime:hover {
+  background-color:#f00;
+  background-image: linear-gradient(
+                  -45deg, 
+                  rgba(255,255,225, 0.1),
+                  rgba(0,0,0, 0.5));
+}
+
